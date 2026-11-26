@@ -7,10 +7,14 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-emerald-50 via-teal-50/60 to-green-100/70 text-slate-800 antialiased min-h-screen font-sans;
+    @apply bg-gradient-to-br from-emerald-50 via-teal-50/70 to-lime-50/60 text-slate-800 antialiased min-h-screen font-sans selection:bg-emerald-600 selection:text-white;
   }
 }
 
-.glass-card {
-  @apply bg-white/75 backdrop-blur-md border border-white/60 shadow-lg shadow-emerald-900/5 rounded-2xl;
+.glass-panel {
+  @apply bg-white/75 backdrop-blur-xl border border-white/80 shadow-xl shadow-emerald-950/[0.04] rounded-3xl;
+}
+
+.glass-pill {
+  @apply bg-white/70 backdrop-blur-md border border-emerald-200/70 rounded-2xl;
 }
